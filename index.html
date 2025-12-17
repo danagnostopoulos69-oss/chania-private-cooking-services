@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chania Private Cooking Services | Luxury Private Chefs in Crete</title>
+<meta name="description" content="Luxury private chef services in Chania, Crete. Two MasterChef Greece chefs offering tailor-made dining experiences in villas and private residences.">
+
+<style>
+body {
+  margin:0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color:#222;
+  line-height:1.7;
+}
+
+/* NAV */
+nav {
+  position:fixed;
+  top:0; left:0; right:0;
+  z-index:1000;
+  padding:14px 30px;
+  display:flex;
+  justify-content:flex-end;
+  background:rgba(0,0,0,0.65);
+}
+nav button {
+  margin-left:8px;
+  padding:6px 14px;
+  border:1px solid #fff;
+  background:transparent;
+  color:#fff;
+  cursor:pointer;
+}
+
+/* HERO */
+header {
+  min-height:100vh;
+  background:url('assets/images/hero.jpg') center/cover no-repeat;
+  position:relative;
+  color:#fff;
+  text-align:center;
+}
+header::after {
+  content:'';
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.55);
+}
+header .inner {
+  position:relative;
+  z-index:2;
+  padding:140px 20px;
+}
+
+.logo { max-width:180px; margin-bottom:30px; }
+.hero-title { font-size:42px; font-weight:700; }
+.hero-sub { font-size:18px; margin:18px 0 30px; }
+
+.btn {
+  padding:12px 30px;
+  border:1px solid #fff;
+  color:#fff;
+  text-decoration:none;
+}
+
+/* SECTIONS */
+section {
+  max-width:1150px;
+  margin:auto;
+  padding:90px 20px;
+}
+
+h2 { font-size:32px; margin-bottom:25px; }
+
+.split {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+/* GALLERY */
+.gallery {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+  gap:30px;
+}
+.gallery img {
+  width:100%;
+  height:420px;
+  object-fit:cover;
+  border-radius:16px;
+}
+
+/* CTA */
+.cta {
+  background:#111;
+  color:#fff;
+  text-align:center;
+}
+
+/* FOOTER */
+footer {
+  background:#f4f4f4;
+  text-align:center;
+  padding:20px;
+  font-size:14px;
+}
+
+/* LANG */
+.lang { display:none; }
+.lang.active { display:block; }
+
+/* MOBILE */
+@media(max-width:900px){
+  .split { grid-template-columns:1fr; }
+  .hero-title { font-size:30px; }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <button onclick="setLang('en')">EN</button>
+  <button onclick="setLang('gr')">GR</button>
+</nav>
+
+<header>
+  <div class="inner">
+    <img src="assets/images/logo.png" class="logo" alt="Chania Private Cooking Services">
+
+    <div class="lang en active">
+      <div class="hero-title">Chania Private Cooking Services</div>
+      <div class="hero-sub">Luxury Private Chefs in Crete</div>
+      <a href="#contact" class="btn">Contact Us</a>
+    </div>
+
+    <div class="lang gr">
+      <div class="hero-title">Chania Private Cooking Services</div>
+      <div class="hero-sub">Luxury Private Chefs στην Κρήτη</div>
+      <a href="#contact" class="btn">Επικοινωνία</a>
+    </div>
+  </div>
+</header>
+
+<section>
+<div class="split">
+<img src="assets/images/chef.jpg" style="width:100%;border-radius:18px">
+
+<div class="lang en active">
+<h2>About Us</h2>
+<p>We are Dimitris Anagnostopoulos and Alexandros Antonelakis, two professional private chefs based in Chania, Crete.</p>
+<p>We have both participated in MasterChef Greece (Seasons 7 & 9), an experience that sharpened our culinary identity, discipline and creativity at a professional level.</p>
+<p>We specialize in luxury, tailor-made dining experiences in villas and private residences, combining authentic Greek flavors with modern Mediterranean techniques.</p>
+<p>From menu design and sourcing to execution and full kitchen clean-up, we manage every detail — allowing our guests to fully relax and enjoy a seamless culinary experience.</p>
+</div>
+
+<div class="lang gr">
+<h2>Σχετικά με εμάς</h2>
+<p>Είμαστε ο Δημήτρης Αναγνωστόπουλος και ο Αλέξανδρος Αντωνελάκης, δύο επαγγελματίες private chefs με έδρα τα Χανιά.</p>
+<p>Έχουμε συμμετάσχει στο MasterChef Ελλάδας (κύκλοι 7 & 9), εμπειρία που ενίσχυσε τη δημιουργικότητα και την επαγγελματική μας προσέγγιση.</p>
+<p>Εξειδικευόμαστε σε υψηλού επιπέδου, προσωποποιημένες γαστρονομικές εμπειρίες σε βίλες και ιδιωτικές κατοικίες.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2 style="text-align:center">Gallery</h2>
+<div class="gallery">
+  <img src="gallery/1.jpg">
+  <img src="gallery/2.jpg">
+  <img src="gallery/3.jpg">
+  <img src="gallery/4.jpg">
+  <img src="gallery/5.jpg">
+  <img src="gallery/6.jpg">
+  <img src="gallery/7.jpg">
+</div>
+</section>
+
+<section id="contact" class="cta">
+<h2>Contact</h2>
+<p>Email: danagnostopoulos69@gmail.com</p>
+<p>WhatsApp: +30 697 162 0636</p>
+</section>
+
+<footer>
+© Chania Private Cooking Services
+</footer>
+
+<script>
+function setLang(lang){
+  document.querySelectorAll('.lang').forEach(e=>e.classList.remove('active'));
+  document.querySelectorAll('.'+lang).forEach(e=>e.classList.add('active'));
+}
+</script>
+
+</body>
+</html>
